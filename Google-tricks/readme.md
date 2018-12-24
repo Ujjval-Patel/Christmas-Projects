@@ -8,3 +8,6 @@
 3. Open a website which has a particular word in title
         
         example `intitle: hacking`
+        
+### Other dorks can be found [here](`https://www.exploit-db.com/google-hacking-database`)
+        
