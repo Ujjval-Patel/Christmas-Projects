@@ -9,5 +9,5 @@
         
         example `intitle: hacking`
         
-### Other dorks can be found [here](`https://www.exploit-db.com/google-hacking-database`)
+### Other dorks can be found [here](https://www.exploit-db.com/google-hacking-database)
         
