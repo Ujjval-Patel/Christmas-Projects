@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');/*--- Paragraph Font --*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed'); /*--- Headings Font --*/
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+body{
+	background: #f0f0f0;
+	color: #555;
+	font-family: 'Ubuntu Condensed','sans-serif';
+	line-height: 190%;
+	text-align: center;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 190%;
+	padding: 5% 0;
+}
+h4 {
+	font-size: 170%;
+	padding: 5% 0;
+}
+h5 {
+	font-size: 120%;
+	color: #959595;
+}
+img{
+	max-width: 100%;
+}
+header {
+	background: #405580;
+	height: 86px;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	opacity: 0.9;
+	top: 0;
+}
+#header-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#logo {
+	background: url(img/the-gym.png);
+	float: left;
+	width: 200px;
+	height: 60px;
+	margin: 20px;
+}
+/*--- Start Navigation---*/
+nav {
+	float: right;
+	padding: 35px 20px 0 0;
+} 
+#menu-icon {
+	background: url(img/icon.png) center;
+	width: 40px;
+	height: 34px;
+	display: hidden;
+}
+ul {
+	list-style: none;
+}
+nav ul li{
+	font-family: sans-serif;
+	display: inline-block;
+	padding: 10px;
+	float: left;
+	font-size: 110%;
+}
+nav ul li a {
+	color:#F0F0F0;
+	text-decoration: none;
+	font-weight: 700;
+}
+a:hover, .current{
+	text-decoration: underline;
+}
+/* ------ Start Slider -----------*/
+
+.slider {
+	margin-top: 90px;
+}
+.bx-controls {
+	display: none;
+}
+/* ---Start Inner Wrapper ---*/
+#inner-wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.one-third {
+	width: 29%;
+	float: left;
+	margin:2%;
+}
+.circle {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	background: #405580;
+	border-radius: 50%;
+}
+.one-third i{
+	color: #F0F0F0;
+	font-size: 555%;
+	padding: 20%;
+}
+p {
+	font-family: 'Droid Sans', sans-serif;
+	text-align: justify;
+	text-transform: uppercase;
+	font-size: 125%;
+	padding: 2%;
+}
+.clearfix {
+	clear: both;
+	padding: 2%;
+}
+article {
+	float: left;
+	width: 50%;
+	padding: 4%;
+}
+.circle-image {
+	border-radius: 70%;
+}
+aside {
+	float: right;
+	width: 35%;
+	padding: 2%;
+}
+aside h3 {
+	text-decoration: underline;
+}
+.one-third img {
+	padding-bottom: 2%;
+}
+
+/*---Start Footer ---*/
+footer {
+	background: #333;
+	overflow: hidden;
+	opacity: 0.9;
+}
+#footer-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+footer .one-third {
+	width: 33%;
+	margin: 2% 0;
+}
+footer h3 {
+	color: #959595;
+}
+footer p{
+	color: #959595;
+	text-align: center;
+}
+#footer-third {
+	border-right: 1px solid #959595;
+	min-height: 250px;
+	max-height: 250px;
+}
+footer a {
+	color: #959595;
+	text-decoration: none;
+}
+.social li{
+	display: inline;
+}
+.social i{
+	font-size: 245%;
+	padding: 2% 6%;
+	color: #959595;
+}
+.social i:hover {
+	color: #F5F5F5;
+}
+h5 a:hover {
+	text-decoration: none;
+	color: #405580;
+}
+/*---Start Footer Second---*/
+footer.second {
+	border-top: 1px solid #4D4E50;
+	max-height: 50px;
+	padding-bottom: 3%;
+	opacity: 0.95;
+}
+/*--- Media-Queries ----*/
+@media screen and (max-width: 768px) {
+	header{
+		position: absolute;
+	}
+	#menu-icon {
+		display: inline-block;
+	}
+	nav:hover ul{
+		display: block;
+	}
+	nav ul, nav:active ul {
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		background: #405580; 
+		width: 50%;
+		padding: 20px;
+		right: 20px;
+		top: 60px;
+		border: 1px solid #fff;
+		border-radius: 4px 0 4px 4px;
+	}
+	nav li{
+		text-align: center;
+		width: 100%;
+	}
+	.one-third {
+		width: 100%;
+		margin: 0;
+	}
+	.circle {
+		width: 100px;
+		height:100px;
+	}
+	.one-third i{
+		font-size: 360%;
+	}
+	article {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	aside {
+		width: 100%;
+	}
+	h4 {
+		font-size: 140%;
+	}
+	footer .one-third {
+		width: 100%;
+		margin: 0;
+	}
+	.social i {
+		font-size: 245%;
+	}
+	#footer-third { 
+		min-height:150px;
+		padding-bottom: 10%;
+		border-bottom: 1px solid #959595;
+	}
+	#footer-third-last {
+		margin-bottom: 15%;
+	}	
+}
+
+@media screen and (max-width:478px) {
+	h3 {
+		font-size: 150%;
+	}
+	p {
+		font-size: 100%;
+		margin: 2%;
+	}
+	h4 {
+		font-size: 115%;
+	}
+}
